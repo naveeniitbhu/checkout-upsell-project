@@ -1,0 +1,22 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "1d4cf542f0e8d16dab4eff21dfd30727"
+name = "checkout upsell"
+handle = "checkout-upsell-157"
+application_url = "https://shopify-ui-extension-demo-9--development.gadget.app/api/shopify/install-or-render"
+embedded = true
+
+[build]
+dev_store_url = "quickstart-841ad32b.myshopify.com"
+include_config_on_deploy = true
+
+[auth]
+redirect_urls = [
+  "https://shopify-ui-extension-demo-9--development.gadget.app/api/connections/auth/shopify/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
